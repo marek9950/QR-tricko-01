@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo QR</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            /* Optional: neutral background */
+        }
+
+        img {
+            display: block;
+        }
+
+        /* Mobile default: Full Width */
+        @media (max-width: 768px) {
+            img {
+                width: 100vw;
+                height: auto;
+            }
+        }
+
+        /* Desktop: Full Height */
+        @media (min-width: 769px) {
+            img {
+                height: 100vh;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="photo_qr.png" alt="QR Kód">
+
+</body>
+
+</html>
